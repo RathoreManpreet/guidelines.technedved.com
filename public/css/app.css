@@ -10687,7 +10687,36 @@ a.text-dark:focus {
 .home__banner_title {
   background: rgba(0, 43, 255, 0.18);
   padding: 5px;
-  border-radius: 5px;
-  font-weight: 600;
+}
+
+.container-fluid__content {
+  padding-top: 20px;
+}
+
+.container-fluid__content p {
+  font-size: 18px;
+}
+
+.container-fluid__content__code {
+  background: #ddd;
+  padding: 5px;
+  border-radius: 3px;
+  color: #1000ff;
+}
+
+.container-fluid__content_li {
+  font-size: 18px;
+}
+
+.container-fluid__content-padding {
+  padding-top: 100px;
+}
+
+.code__bad {
+  color: #ff0a5c !important;
+}
+
+.code__good {
+  color: #38c172 !important;
 }
 
