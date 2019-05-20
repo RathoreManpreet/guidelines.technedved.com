@@ -16,9 +16,9 @@
                     Work-Flow
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Setup New Project</a>
+                <a class="dropdown-item" href="{{route('new-project-setup')}}">Setup New Project</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Version Control</a>
+                <a class="dropdown-item" href="{{route('version-control')}}">Version Control</a>
                     <a class="dropdown-item" href="#">Project Production</a>
                 </div>
             </li>
