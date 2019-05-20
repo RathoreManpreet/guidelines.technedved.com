@@ -10,7 +10,7 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
-/.idea
-/public/css
-/public/js
+/.idea/
+/public/css/
+/public/js/
 /public/mix-manifesto.js

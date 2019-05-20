@@ -14,4 +14,23 @@ class HomeController extends Controller
     {
         return view('index');
     }
+
+    /*-------------------------------------
+     * Project Setup
+     *
+     *------------------------------------*/
+    public function newProjectSetup()
+    {
+        return view('new-project-setup');
+    }
+
+    /*-------------------------------------
+     * Version Control
+     *
+     *------------------------------------*/
+    public function versionControl()
+    {
+        return view('version-control');
+    }
+    
 }
