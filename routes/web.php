@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('index');
 });
+Route::get('/workflow', function () {
+    return view('workflow');
+});
+Route::get('/code_style', function () {
+    return view('code_style');
+});
+
