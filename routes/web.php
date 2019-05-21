@@ -21,5 +21,11 @@ Route::get('/new-project-setup', ['uses'=>'HomeController@newProjectSetup','as'=
  *--------------------------------------------------------------------------*/
 Route::get('/version-control', ['uses'=>'HomeController@versionControl','as'=>'version-control']);
 
+/*--------------------------------------------------------------------------
+ * Laravel and PHP Route
+ *
+ *--------------------------------------------------------------------------*/
+Route::get('/laravel-and-php', ['uses'=>'HomeController@laravelAndPHP','as'=>'laravel-and-php']);
+
 /*------------------------------End Guidelines Route---------------------------*/
 
