@@ -133,9 +133,6 @@
                     <li class="container-fluid__content_li">
                             If your push is denied, rebase your branch first using <code class="container-fluid__content__code">git rebase</code>
                     </li>
-                    <li class="container-fluid__content_li">
-                            Future you wants a quick way to retrieve that point in history by browsing passed pull requests
-                    </li>
                 </ul>
 
                 <p class="font-14 font-weight-bold">
@@ -155,14 +152,83 @@
                             <code class="container-fluid__content_code">Fix vat calculation in delivery costs</code>
                            
                     </li>
+                </ul>
+                <p>
+                    Ideally, prefer granular commits.
+                </p>
+                <ul>
                     <li class="container-fluid__content_li">
-                            Future you wants a quick way to retrieve that point in history by browsing passed pull requests
+                        Acceptable: <code class="container-fluid__content__code"> Cart fixes</code>
+                    </li>
+                    <li class="container-fluid__content_li">
+                        Better: <code class="container-fluid__content_code">Fix add to cart button</code>,
+                        <code class="container-fluid__content_code">Fix cart count on home</code>
+
                     </li>
                 </ul>
-
+                <h2>
+                    Git Tips
+                </h2>
+                <p class="font-14 font-weight-bold">
+                    CREATING GRANULAR COMMITS WITH <code class="container-fluid__content__code">patch</code>
+                </p>
+                <p>
+                    If you've made multiple changes but want to split them into more granular commits, use <code class="container-fluid__content__code">git add -p</code> . This will open an interactive session in which you can choose which chunks you want to stage for your commit.
+                </p>
+                <p class="font-14 font-weight-bold">
+                    MOVING COMMITS TO A NEW BRANCH
+                </p>
+                <p>
+                    First, create your new branch, then revert the current branch, and finally checkout the new branch.
+                </p>
+                <p>
+                    Don't do this to commits that have already been pushed without double checking with your collaborators!
+                </p>
+                <pre class="container-fluid__content_pre">
+                    <code>
+                        git branch my-branch
+                        git reset --hard HEAD~3 <span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment"># OR git reset --hard &lt;commit&gt;</span></span></span></span></span></span></span></span></span></span>
+                        git checkout my-branch
+                    </code>
+                </pre>
+                <p class="font-14 font-weight-bold">
+                    SQUASHING COMMITS ALREADY PUSHED
+                </p>
+                <p>
+                    Only execute when you are sure that no-one else pushed changes during your commits.
+                </p>
+                <p>
+                    First, copy the SHA from the commit previous to your commits that need to be squashed.
+                </p>
+                <pre class="container-fluid__content_pre">
+                    <code class="language-bash hljs">
+                        git reset --soft &lt;commit&gt;
+                        git commit -m <span class="hljs-string"><span class="hljs-string"><span class="hljs-string"><span class="hljs-string"><span class="hljs-string"><span class="hljs-string"><span class="hljs-string"><span class="hljs-string"><span class="hljs-string"><span class="hljs-string">"your new message"</span></span></span></span></span></span></span></span></span></span>
+                        git push --force
+                    </code>
+                </pre>
+                <p class="font-14 font-weight-bold">
+                    CLEANING UP LOCAL BRANCHES
+                </p>
+                <p>
+                    After a while, you'll end up with a few stale branches in your local repository. Branches that don't exist upstream can be cleaned up with <code class="container-fluid__content__code">git remote prune origin</code>. If you want to ensure you're not about to delete something important, add a <code class="container-fluid__content__code">--dry-run</code> flag.
+                </p>
+                <h2>
+                    Resources
+                </h2>
+                <ul>
+                    <li class="container-fluid__content_li">
+                        Most of this is based on the <a href="https://guides.github.com/introduction/flow/">GitHub Flow</a>
+                    </li>
+                    <li class="container-fluid__content_li">
+                        Merge vs. rebase on <a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing/workflow-walkthrough">Atlassian</a>
+                    </li>
+                    <li class="container-fluid__content_li">
+                        Merge vs. rebase by <a href="https://medium.com/@porteneuve/getting-solid-at-git-rebase-vs-merge-4fa1a48c53aa">@porteneuve</a>
+                    </li>
+                </ul>
             </div>
         </div>
-       
     </div>
 </div>
 </body>

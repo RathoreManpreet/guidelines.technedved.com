@@ -10720,3 +10720,26 @@ a.text-dark:focus {
   color: #38c172 !important;
 }
 
+.container-fluid__content_pre{
+    border-top: 1px solid #e8f6fa;
+    border-bottom: 1px solid #e8f6fa;
+    margin: 27px -.3em;
+    color: #48595d;
+    overflow: auto;
+    font-family: Menlo,Courier New,Courier,monospace;
+    font-size: 16px;
+    background-color: #f5fafb;
+}
+
+.hljs-comment{
+    color: #969896;
+}
+.hljs-string{
+    color: #df5000;
+}
+.hljs-keyword, .hljs-selector-tag, .hljs-type{
+    color: #a71d5d;
+}
+.hljs-title {
+    color: var(--success);
+}

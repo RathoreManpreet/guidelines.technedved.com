@@ -32,5 +32,14 @@ class HomeController extends Controller
     {
         return view('version-control');
     }
+
+    /*-------------------------------------
+     * Laravel and PHP
+     *
+     *------------------------------------*/
+    public function laravelAndPHP()
+    {
+        return view('laravel-and-php');
+    }
     
 }
