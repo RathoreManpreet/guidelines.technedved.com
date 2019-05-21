@@ -29,8 +29,8 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="{{route('laravel-and-php')}}">Laravel &amp; PHP</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Css</a>
-                    <a class="dropdown-item" href="#">Javascript &amp; Vue</a>
+                    <a class="dropdown-item" href="{{route('css-page')}}">Css</a>
+                    <a class="dropdown-item" href="{{route('javascript')}}">Javascript &amp; Vue</a>
                 </div>
             </li>
         </ul>

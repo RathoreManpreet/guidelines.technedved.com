@@ -27,5 +27,18 @@ Route::get('/version-control', ['uses'=>'HomeController@versionControl','as'=>'v
  *--------------------------------------------------------------------------*/
 Route::get('/laravel-and-php', ['uses'=>'HomeController@laravelAndPHP','as'=>'laravel-and-php']);
 
+/*--------------------------------------------------------------------------
+ * CSS Page
+ *
+ *--------------------------------------------------------------------------*/
+Route::get('/css/page', ['uses'=>'HomeController@cssPage','as'=>'css-page']);
+
+
+/*--------------------------------------------------------------------------
+ * JavaScript Page
+ *
+ *--------------------------------------------------------------------------*/
+Route::get('/javascript', ['uses'=>'HomeController@javaScriptPage','as'=>'javascript']);
+
 /*------------------------------End Guidelines Route---------------------------*/
 
