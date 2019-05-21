@@ -16,9 +16,9 @@
                     Work-Flow
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Setup New Project</a>
+                <a class="dropdown-item" href="{{route('new-project-setup')}}">Setup New Project</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Version Control</a>
+                <a class="dropdown-item" href="{{route('version-control')}}">Version Control</a>
                     <a class="dropdown-item" href="#">Project Production</a>
                 </div>
             </li>
@@ -27,10 +27,10 @@
                     Coding Style
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Laravel &amp;amp; PHP</a>
+                    <a class="dropdown-item" href="{{route('laravel-and-php')}}">Laravel &amp; PHP</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Css</a>
-                    <a class="dropdown-item" href="#">Javascript &amp;amp; Vue</a>
+                    <a class="dropdown-item" href="#">Javascript &amp; Vue</a>
                 </div>
             </li>
         </ul>
