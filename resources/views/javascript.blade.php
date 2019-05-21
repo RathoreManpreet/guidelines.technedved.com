@@ -161,13 +161,13 @@
                 <pre class="container-fluid__content_pre" style="padding-top: 20px">
                     <code class="language-js hljs javascript">
                         <span class="hljs-comment">// Good</span>
-                        <span class="hljs-keyword">const</span> company = <span class="hljs-string">'Spatie'</span>;
+                        <span class="hljs-keyword">const</span> company = <span class="hljs-string">'Techneved'</span>;
 
                         <span class="hljs-comment">// Bad, single quotes can be used here.</span>
-                        <span class="hljs-keyword">const</span> company = <span class="hljs-string">"Spatie"</span>;
+                        <span class="hljs-keyword">const</span> company = <span class="hljs-string">"Techneved"</span>;
 
                         <span class="hljs-comment">// Bad, single quotes can be used here.</span>
-                        <span class="hljs-keyword">const</span> company = <span class="hljs-string">`Spatie`</span>;
+                        <span class="hljs-keyword">const</span> company = <span class="hljs-string">`Techneved`</span>;
                     </code>
                 </pre>
                 <pre class="container-fluid__content_pre" style="padding-top: 20px">
