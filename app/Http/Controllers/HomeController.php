@@ -41,5 +41,23 @@ class HomeController extends Controller
     {
         return view('laravel-and-php');
     }
-    
+
+
+    /*-------------------------------------
+     * CSS
+     *
+     *------------------------------------*/
+    public function cssPage()
+    {
+        return view('css-page');
+    }
+
+    /*-------------------------------------
+     * JavaScript Page
+     *
+     *------------------------------------*/
+    public function javaScriptPage()
+    {
+        return view('javascript');
+    }
 }
